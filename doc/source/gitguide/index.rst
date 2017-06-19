@@ -48,7 +48,7 @@ Following is the list of commands which are used in this tutorial.
     +-------------------------------------------------+------------------------------------------------------------+
     | git reset                                       | Remove *all files* from stage list (i.e. back to modified) |
     +-------------------------------------------------+------------------------------------------------------------+
-    | git reset *file1*                               | Remove *file1* from stage list (i.e. back to modified      |
+    | git reset *file1*                               | Remove *file1* from stage list (i.e. back to modified)     |
     +-------------------------------------------------+------------------------------------------------------------+
     | git reset --hard *13802e3*                      | Reset to previous commit with hash 13802e3                 |
     +-------------------------------------------------+------------------------------------------------------------+
