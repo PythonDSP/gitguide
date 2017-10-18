@@ -372,3 +372,5 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 # show/hide prompt >>>
 def setup(app):
     app.add_javascript('copybutton.js')
+
+html_use_smartypants = False

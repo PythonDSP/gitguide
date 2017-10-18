@@ -42,7 +42,7 @@ Following is the list of commands which are used in this tutorial.
     +-------------------------------------------------+------------------------------------------------------------+
     | git diff                                        | Differences between unstaged files and previous commit     |
     +-------------------------------------------------+------------------------------------------------------------+
-    | git diff - -cached                              | Differences between staged files and previous commit       |
+    | git diff --cached                               | Differences between staged files and previous commit       |
     +-------------------------------------------------+------------------------------------------------------------+
     | git diff --stat                                 | Show only changed filenames (not the details)              |
     +-------------------------------------------------+------------------------------------------------------------+
@@ -822,7 +822,7 @@ Finally, commit the changes and see the 'git log' as below.
 
 
 Create branches through older commits
------------------------------------
+-------------------------------------
 
 Suppose we want to create a new branch 'diff2Num' from the commit3 i.e. through the header '13802e3'. For this, first we need to checkout the header and then create a branch there using 'git branch -b' command as below, 
 
@@ -981,7 +981,7 @@ If we **do not want merge the repository immediately**, then Fetch command shoul
 
 Here, first command fetch all the branches, whereas second command will fetch the specific branch. To merge these changes, first go to the master branch and then run merge commands. 
 
-.. code-block:: 
+.. code-block:: shell
 
   $ git checkout master
   $ git merge userName/master
