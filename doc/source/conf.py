@@ -216,7 +216,7 @@ latex_elements = {
         \addto\captionsenglish{\renewcommand{\contentsname}{Table of contents}}
         \addto\captionsenglish{\renewcommand{\listfigurename}{List of figures}}
         \addto\captionsenglish{\renewcommand{\listtablename}{List of tables}}
-        \addto\captionsenglish{\renewcommand{\listtablename}{List of tables}} %%% Heading for TOC
+        % \addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
 
 
         %%reduce spacing for itemize
