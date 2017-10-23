@@ -6,11 +6,10 @@
 Welcome to Git Guide!
 =====================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :numbered:
+   :caption: Contents:
 
    gitguide/index
 
