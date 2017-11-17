@@ -329,6 +329,5 @@ def setup(app):
 numfig = True
 smart_quotes = False
 html_use_smartypants = False
-
 html_theme = 'sphinx_rtd_theme'
 
