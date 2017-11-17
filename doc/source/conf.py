@@ -328,4 +328,7 @@ def setup(app):
 # use :numref: for references (instead of :ref:)
 numfig = True
 smart_quotes = False
+html_use_smartypants = False
+
 html_theme = 'sphinx_rtd_theme'
+
