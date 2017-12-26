@@ -140,7 +140,7 @@ latex_elements = {
     # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
     # 'fncychap': '\\usepackage[Lenny]{fncychap}',
     'fncychap': '\\usepackage{fncychap}',
-    # 'fontpkg': ' ',
+    'fontpkg': '\\usepackage{amsmath,amsfonts,amssymb,amsthm}',
 
     'figure_align':'htbp',
     # The font size ('10pt', '11pt' or '12pt').
@@ -276,7 +276,10 @@ latex_elements = {
     'sphinxsetup': \
         'hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
         verbatimwithframe=true, \
-        TitleColor={rgb}{0,0,0}',
+        TitleColor={rgb}{0,0,0}, \
+        HeaderFamily=\\rmfamily\\bfseries, \
+        InnerLinkColor={rgb}{0,0,1}, \
+        OuterLinkColor={rgb}{0,0,1}',
 
         'tableofcontents':' ',
 
