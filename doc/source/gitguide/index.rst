@@ -97,6 +97,9 @@ Following is the list of commands which are used in this tutorial.
     | git clone                         | Clone or download remote repository              |
     | https://nameOfRemoteRepository    |                                                  |
     +-----------------------------------+--------------------------------------------------+
+    | git clone  --depth 1              | Clone only last branch                           |
+    | https://nameOfRemoteRepository    |                                                  |
+    +-----------------------------------+--------------------------------------------------+
     | git pull *repoName* *branchName*  | Download and merge 'branchName' of repoName      |
     +-----------------------------------+--------------------------------------------------+
     | git fetch *repoName* *branchName* | Download, but not merge repoName                 |
@@ -934,6 +937,13 @@ Once repository is pushed on the remote, then it can be cloned (downloaded) on o
   git clone https://bitbucket.org/Userid/nameOfRemoteRepository
 
 Replace url 'https://bitbucket.org/Userid/nameOfRemoteRepository' with your project's url. 
+
+
+Also, we can use '--depth 1' option, which will clone the latest branch only. This can reduce the download time, 
+
+.. code-block:: shell
+
+  git clone --depth 1 https://bitbucket.org/Userid/nameOfRemoteRepository
 
 
 Pull changes from repository
