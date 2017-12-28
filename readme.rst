@@ -106,8 +106,10 @@ Command Summary
     | git clone                         | Clone or download remote repository              |
     | https://nameOfRemoteRepository    |                                                  |
     +-----------------------------------+--------------------------------------------------+
+    | git clone  --depth 1              | Clone only last branch                           |
+    | https://nameOfRemoteRepository    |                                                  |
+    +-----------------------------------+--------------------------------------------------+
     | git pull *repoName* *branchName*  | Download and merge 'branchName' of repoName      |
     +-----------------------------------+--------------------------------------------------+
     | git fetch *repoName* *branchName* | Download, but not merge repoName                 |
     +-----------------------------------+--------------------------------------------------+
-
