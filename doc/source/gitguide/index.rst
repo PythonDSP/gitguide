@@ -59,6 +59,8 @@ Following is the list of commands which are used in this tutorial.
     +-----------------------------------+--------------------------------------------------+
     | git reset --hard *13802e3*        | Reset to previous commit with hash 13802e3       |
     +-----------------------------------+--------------------------------------------------+
+    | git reset HEAD --hard             | remove all changes after last commit             |
+    +-----------------------------------+--------------------------------------------------+
     | git checkout *file1*              | Remove changes from non-staged file1             |
     |                                   | to previous commit                               |
     +-----------------------------------+--------------------------------------------------+
