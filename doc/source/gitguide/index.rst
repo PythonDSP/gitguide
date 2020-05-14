@@ -5,107 +5,107 @@ Following is the list of commands which are used in this tutorial.
 
 .. Table:: Commands summary
 
-    +-----------------------------------+--------------------------------------------------+
-    | Commands                          | Descriptions                                     |
-    +===================================+==================================================+
-    | **Local Repository**              |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | sudo apt-get install git          | Install git in Linux Ubuntu                      |
-    +-----------------------------------+--------------------------------------------------+
-    | git config --global               | Set username as 'meher'                          |
-    | user.name *meher*                 |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git config --global user.email    | Set email as 'abc@gmail.com                      |
-    | *abc@gmail.com*                   |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git config --global               | Set 'vim' as default text-editor                 |
-    | core.editor "vim"                 |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git config --global               | Cache username and password                      |
-    | credential.helper cache           |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git init                          | Initialize git repository                        |
-    +-----------------------------------+--------------------------------------------------+
-    | git status                        | File status i.e. modified and untracked etc.     |
-    +-----------------------------------+--------------------------------------------------+
-    | git add .                         | Add all untracked files                          |
-    +-----------------------------------+--------------------------------------------------+
-    | git add *file1 file2*             | Add (stage) file1 and file2                      |
-    +-----------------------------------+--------------------------------------------------+
-    | git rm --cached *file1*           | Remove the staged file *file1*                   |
-    +-----------------------------------+--------------------------------------------------+
-    | git commit -m *"commit message"*  | Commit stage file with 'commit message'          |
-    +-----------------------------------+--------------------------------------------------+
-    | git log                           | Show detail list of commits                      |
-    +-----------------------------------+--------------------------------------------------+
-    | git log --oneline                 | Show hash and commit name only                   |
-    +-----------------------------------+--------------------------------------------------+
-    | git log --graph                   | Show commits in the form of graph                |
-    +-----------------------------------+--------------------------------------------------+
-    | git log --oneline --graph         | Show online-commit in the form of graph          |
-    +-----------------------------------+--------------------------------------------------+
-    | git diff                          | Differences between unstaged files               |
-    |                                   | and previous commit                              |
-    +-----------------------------------+--------------------------------------------------+
-    | git diff --cached                 | Differences between staged files and             |
-    +-----------------------------------+--------------------------------------------------+
-    | git diff --stat                   | Show only changed filenames (not the details)    |
-    +-----------------------------------+--------------------------------------------------+
-    | git reset                         | Remove *all files* from stage list               |
-    |                                   | (i.e. back to modified)                          |
-    +-----------------------------------+--------------------------------------------------+
-    | git reset *file1*                 | Remove *file1* from stage list                   |
-    |                                   | (i.e. back to modified)                          |
-    +-----------------------------------+--------------------------------------------------+
-    | git reset --hard *13802e3*        | Reset to previous commit with hash 13802e3       |
-    +-----------------------------------+--------------------------------------------------+
-    | git reset HEAD --hard             | remove all changes after last commit             |
-    +-----------------------------------+--------------------------------------------------+
-    | git checkout *file1*              | Remove changes from non-staged file1             |
-    |                                   | to previous commit                               |
-    +-----------------------------------+--------------------------------------------------+
-    | git rm *file1*                    | Delete file1 from git (but available             |
-    |                                   | in previous commit                               |
-    +-----------------------------------+--------------------------------------------------+
-    | git branch                        | Show all the branches                            |
-    +-----------------------------------+--------------------------------------------------+
-    | git branch *branch1*              | Create branch1                                   |
-    +-----------------------------------+--------------------------------------------------+
-    | git branch -d *branch1*           | Delete branch1                                   |
-    +-----------------------------------+--------------------------------------------------+
-    | git checkout *branch1*            | Go to branch1                                    |
-    +-----------------------------------+--------------------------------------------------+
-    | git checkout master               | Go to master branch                              |
-    +-----------------------------------+--------------------------------------------------+
-    | git merge *branch1*               | Merge the *brach1* to current branch e.g. master |
-    +-----------------------------------+--------------------------------------------------+
-    | git checkout *13802e3*            | Create new branch from previous commit 13802e3   |
-    +-----------------------------------+--------------------------------------------------+
-    | git checkout -b *branch1*         | First checkout and then create branch            |
-    +-----------------------------------+--------------------------------------------------+
-    | **Remote repository**             |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git remote add *repoName*         | Add remote repo with name 'repoName'             |
-    | *https://url_of_repo*             |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git remote -v                     | Show list of added repoNames                     |
-    +-----------------------------------+--------------------------------------------------+
-    | git remote remove *repoName*      | Remove repoName from list                        |
-    +-----------------------------------+--------------------------------------------------+
-    | git push *repoName* *branch1*     | Push 'branch1' to 'repoName'                     |
-    +-----------------------------------+--------------------------------------------------+
-    | git push *repoName* --all         | Push all branches to repoName                    |
-    +-----------------------------------+--------------------------------------------------+
-    | git clone                         | Clone or download remote repository              |
-    | https://nameOfRemoteRepository    |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git clone  --depth 1              | Clone only last branch                           |
-    | https://nameOfRemoteRepository    |                                                  |
-    +-----------------------------------+--------------------------------------------------+
-    | git pull *repoName* *branchName*  | Download and merge 'branchName' of repoName      |
-    +-----------------------------------+--------------------------------------------------+
-    | git fetch *repoName* *branchName* | Download, but not merge repoName                 |
-    +-----------------------------------+--------------------------------------------------+
+    +-----------------------------------+---------------------------------------------------+
+    | Commands                          | Descriptions                                      |
+    +===================================+===================================================+
+    | **Local Repository**              |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | sudo apt-get install git          | Install git in Linux Ubuntu                       |
+    +-----------------------------------+---------------------------------------------------+
+    | git config --global               | Set username as 'meher'                           |
+    | user.name *meher*                 |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git config --global user.email    | Set email as 'abc@gmail.com                       |
+    | *abc@gmail.com*                   |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git config --global               | Set 'vim' as default text-editor                  |
+    | core.editor "vim"                 |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git config --global               | Cache username and password                       |
+    | credential.helper cache           |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git init                          | Initialize git repository                         |
+    +-----------------------------------+---------------------------------------------------+
+    | git status                        | File status i.e. modified and untracked etc.      |
+    +-----------------------------------+---------------------------------------------------+
+    | git add .                         | Add all untracked files                           |
+    +-----------------------------------+---------------------------------------------------+
+    | git add *file1 file2*             | Add (stage) file1 and file2                       |
+    +-----------------------------------+---------------------------------------------------+
+    | git rm --cached *file1*           | Remove the staged file *file1*                    |
+    +-----------------------------------+---------------------------------------------------+
+    | git commit -m *"commit message"*  | Commit stage file with 'commit message'           |
+    +-----------------------------------+---------------------------------------------------+
+    | git log                           | Show detail list of commits                       |
+    +-----------------------------------+---------------------------------------------------+
+    | git log --oneline                 | Show hash and commit name only                    |
+    +-----------------------------------+---------------------------------------------------+
+    | git log --graph                   | Show commits in the form of graph                 |
+    +-----------------------------------+---------------------------------------------------+
+    | git log --oneline --graph         | Show online-commit in the form of graph           |
+    +-----------------------------------+---------------------------------------------------+
+    | git diff                          | Differences between unstaged files                |
+    |                                   | and previous commit                               |
+    +-----------------------------------+---------------------------------------------------+
+    | git diff --cached                 | Differences between staged files and              |
+    +-----------------------------------+---------------------------------------------------+
+    | git diff --stat                   | Show only changed filenames (not the details)     |
+    +-----------------------------------+---------------------------------------------------+
+    | git reset                         | Remove *all files* from stage list                |
+    |                                   | (i.e. back to modified)                           |
+    +-----------------------------------+---------------------------------------------------+
+    | git reset *file1*                 | Remove *file1* from stage list                    |
+    |                                   | (i.e. back to modified)                           |
+    +-----------------------------------+---------------------------------------------------+
+    | git reset --hard *13802e3*        | Reset to previous commit with hash 13802e3        |
+    +-----------------------------------+---------------------------------------------------+
+    | git reset HEAD --hard             | remove all changes after last commit              |
+    +-----------------------------------+---------------------------------------------------+
+    | git checkout *file1*              | Remove changes from non-staged file1              |
+    |                                   | to previous commit                                |
+    +-----------------------------------+---------------------------------------------------+
+    | git rm *file1*                    | Delete file1 from git (but available              |
+    |                                   | in previous commit                                |
+    +-----------------------------------+---------------------------------------------------+
+    | git branch                        | Show all the branches                             |
+    +-----------------------------------+---------------------------------------------------+
+    | git branch *branch1*              | Create branch1                                    |
+    +-----------------------------------+---------------------------------------------------+
+    | git branch -d *branch1*           | Delete branch1                                    |
+    +-----------------------------------+---------------------------------------------------+
+    | git checkout *branch1*            | Go to branch1                                     |
+    +-----------------------------------+---------------------------------------------------+
+    | git checkout master               | Go to master branch                               |
+    +-----------------------------------+---------------------------------------------------+
+    | git merge *branch1*               | Merge the *branch1* to current branch e.g. master |
+    +-----------------------------------+---------------------------------------------------+
+    | git checkout *13802e3*            | Create new branch from previous commit 13802e3    |
+    +-----------------------------------+---------------------------------------------------+
+    | git checkout -b *branch1*         | First checkout and then create branch             |
+    +-----------------------------------+---------------------------------------------------+
+    | **Remote repository**             |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git remote add *repoName*         | Add remote repo with name 'repoName'              |
+    | *https://url_of_repo*             |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git remote -v                     | Show list of added repoNames                      |
+    +-----------------------------------+---------------------------------------------------+
+    | git remote remove *repoName*      | Remove repoName from list                         |
+    +-----------------------------------+---------------------------------------------------+
+    | git push *repoName* *branch1*     | Push 'branch1' to 'repoName'                      |
+    +-----------------------------------+---------------------------------------------------+
+    | git push *repoName* --all         | Push all branches to repoName                     |
+    +-----------------------------------+---------------------------------------------------+
+    | git clone                         | Clone or download remote repository               |
+    | https://nameOfRemoteRepository    |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git clone  --depth 1              | Clone only last branch                            |
+    | https://nameOfRemoteRepository    |                                                   |
+    +-----------------------------------+---------------------------------------------------+
+    | git pull *repoName* *branchName*  | Download and merge 'branchName' of repoName       |
+    +-----------------------------------+---------------------------------------------------+
+    | git fetch *repoName* *branchName* | Download, but not merge repoName                  |
+    +-----------------------------------+---------------------------------------------------+
 
 
 
@@ -866,6 +866,77 @@ In above listing, * shows that currently git is in diff2Num branch. Next, check 
 Now, we can modify the code from third commit and merge those changes to master or work separately on this branch. 
 
 
+
+Git tag
+=======
+
+Tags can be used to mark release points (v1.0 and v2.0 etc.). 
+
+Create tag
+----------
+
+* Create tag v1.3 with message "it's version 1.3"
+
+.. code-block:: shell
+
+    $ git tag -a v1.3 -m "it's version 1.3"
+
+
+List existing tags
+------------------
+
+* List the tags as below. Currently we have only tag, 
+
+.. code-block:: shell
+
+    $ git tag
+        v1.3
+
+
+* Show the tag details, 
+
+.. code-block:: shell
+
+    $ git show v1.3
+        tag v1.3
+        Tagger: Your Name <you@example.com>
+        Date:   Thu May 14 22:45:30 2020 +0530
+
+        it's version 1.3
+
+        commit e6372b406d0dafefca0980525ee8acaecf16962d
+        Author: mpat260 <mpat260@aucklanduni.ac.nz>
+        Date:   Sat May 19 12:20:06 2018 +1200
+
+            updated in all tutorials
+
+        diff --git a/doc/source/_static/copybutton.js b/doc/source/_static/copybutton.js
+        old mode 100644
+        new mode 100755
+
+        [...]
+
+
+
+
+Delete tags
+-----------
+
+
+* Delete the tag with -d option, 
+  
+.. code-block:: shell
+
+    $ git tag -d v1.3
+        Deleted tag 'v1.3' (was 506739d)
+
+    $ git tag 
+      <nothing to display> 
+
+
+
+     
+
 Git GUI
 =======
 
@@ -1050,3 +1121,302 @@ Above commands will merge the userName's master branch to our master branch.
 ..   $ git fetch nameOfRemoteRepository
 ..   $ git fetch nameOfRemoteRepository branchName
  
+
+
+
+Working in a team
+*****************
+
+In the previous section, we have seen various git-commands. In this section, we will use these commands to effectively work in a team. 
+We are assuming that, we already have a local copy of existing remote repository with name 'try_to_edit'
+
+
+Pull the master branch
+======================
+
+* First, step to work on git is to pull the master repository from the online repository e.g. github or bitbucket etc. This will ensure that our master branch is up-to-date. 
+* Also, before pulling the master branch, checkout the master branch in the local repository so that pull will merge to master branch. 
+* In the below, we have checkout the master and then pull the master branch. Here, we can see the output of **pull** command made the necessary changes in the readme.md file (i.e. local copy of readme.md file is updated to remote repository)
+  
+
+.. code-block:: shell
+
+    $ git checkout master
+        Already on 'master'
+        Your branch is up-to-date with 'origin/master'.
+
+    $ git pull https://github.com/testgmj/try_to_edit.git
+        remote: Enumerating objects: 5, done.
+        remote: Counting objects: 100% (5/5), done.
+        remote: Compressing objects: 100% (2/2), done.
+        remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+        Unpacking objects: 100% (3/3), done.
+        From https://github.com/testgmj/try_to_edit
+         * branch            HEAD       -> FETCH_HEAD
+        Updating 1856873..224fc81
+        Fast-forward
+         readme.md | 2 +-
+         1 file changed, 1 insertion(+), 1 deletion(-)    
+
+* Run the pull command again, and we can see that the master branch is up-to-date
+  
+.. code-block:: shell
+
+    $ git pull https://github.com/testgmj/try_to_edit.git
+        From https://github.com/testgmj/try_to_edit
+         * branch            HEAD       -> FETCH_HEAD
+        Already up-to-date.
+
+
+Create branch
+=============
+
+* If we are trying to add the new feature, then it's better to create a branch for it. In this way, we can preserve the master branch. 
+* And we can push this branch to git repository. After a review by the team, we can merge it into the master branch. Later, we can delete the branch, if required.  
+* It's always good to keep the master branch nice and tidy. 
+
+.. code-block:: shell
+
+    (checkout a new branch)
+    $ git checkout -b add_num
+        Switched to a new branch 'add_num'
+
+    (see the current branch)
+    $ git branch
+        * add_num
+          master
+
+
+* Now we will modify the location repository.
+* Create a new file with name add_num.py
+
+.. code-block:: python
+
+    # add_num.py 
+
+    x = 2
+    y = 3
+    print("c = ", x+y)
+
+
+* Next modify the readme.md file, 
+
+.. code-block:: text
+
+    ############## Meher #################
+    Test 1 by Meher
+    Added add_num.py
+
+    ######################################
+    test 2 by Mekrip
+
+    useful command to remember
+
+    git clone https://github.com/testgmj/try_to_edit.git
+
+    git status
+    git commit -a
+    git push
+
+
+
+* Check the status of the git repository, 
+
+.. code-block:: shell
+
+    $ git status
+        On branch add_num
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git checkout -- <file>..." to discard changes in working directory)
+
+          modified:   readme.md
+
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+
+          add_num.py
+
+        no changes added to commit (use "git add" and/or "git commit -a")
+
+
+* Add and commit the changes, 
+  
+.. code-block:: shell
+
+    $ git add -A
+    $ git commit -m "add_num.py added"
+      [add_num 8bf12e0] add_num.py added
+       2 files changed, 7 insertions(+), 4 deletions(-)
+       create mode 100644 add_num.py
+
+
+* Now push the branch to online repository, 
+
+.. code-block:: shell
+
+    $ git push origin add_num
+        Username for 'https://github.com': xxxx
+        Password for 'https://xxxx@github.com': 
+        Counting objects: 4, done.
+        Delta compression using up to 8 threads.
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (4/4), 460 bytes | 0 bytes/s, done.
+        Total 4 (delta 0), reused 0 (delta 0)
+        remote: 
+        remote: Create a pull request for 'add_num' on GitHub by visiting:
+        remote:      https://github.com/testgmj/try_to_edit/pull/new/add_num
+        remote: 
+        To https://github.com/testgmj/try_to_edit.git
+         * [new branch]      add_num -> add_num
+
+
+
+
+Add reviewer and merge the changes to master
+============================================
+
+* After pushing the branch, we can see the changes 'compare and pull request' option on github as shown in :numref:`fig_git1`, 
+  
+
+.. _`fig_git1`:
+
+.. figure:: img/git1.jpg
+    :width: 100%
+
+    Compare and pull request
+
+
+
+* Also, we can see it in 'pull request tab' as shown in :numref:`fig_git7`, 
+
+.. _`fig_git7`:
+
+.. figure:: img/git7.jpg
+    :width: 100%
+
+    Pull request tab
+
+
+
+* We can add summary in the Github so that other can understand the changes well as shown in :numref:`fig_git3`. Also, assign the reviewer for the changes. Finally, send a pull request. 
+
+
+.. _`fig_git3`:
+
+.. figure:: img/git3.jpg
+    :width: 100%
+
+    Assign reviewer, add summary and pull request
+
+
+* Summary of the action can be seen on the pull request page as shown in :numref:`fig_git4`,  
+
+
+.. _`fig_git4`:
+
+.. figure:: img/git4.jpg
+    :width: 100%
+
+    See summary
+
+
+
+* Comments can be put as 'general comments (see :numref:`fig_git5`) or specific to certain lines (see :numref:`fig_git11`)
+
+.. _`fig_git5`:
+
+.. figure:: img/git5.jpg
+    :width: 100%
+
+    Reviewer can provide comments to update 
+
+
+.. _`fig_git11`:
+
+.. figure:: img/git11.jpg
+    :width: 100%
+
+    Comment on individual lines
+
+
+* Once all the suggestions are fixed, then send a merge-pull request as shown in :numref:`fig_git8`, 
+
+
+.. _`fig_git8`:
+
+.. figure:: img/git8.jpg
+    :width: 100%
+
+    Merge request
+
+
+* Confirm merge
+
+.. _`fig_git9`:
+
+.. figure:: img/git9.jpg
+    :width: 100%
+
+    Confirm merge
+
+
+* After successful merge, we will have a option to delete the branch as shown in :numref:`fig_git10`,
+
+.. _`fig_git10`:
+
+.. figure:: img/git10.jpg
+    :width: 100%
+
+    Delete branch (optional)
+
+
+* Also, we can see the list of open and close pull request as shown in :numref:`fig_git12`,
+
+
+.. _`fig_git12`:
+
+.. figure:: img/git12.jpg
+    :width: 100%
+
+    List of open and close pull request 
+
+
+
+Pull the master branch again
+============================
+
+* Now we can pull the master branch again to update the local repository. 
+* Also, we can optionally delete the branch which is already merged to master branch.
+
+
+.. code-block:: shell
+
+    (checkout master )
+    $ git checkout master
+        Switched to branch 'master'
+        Your branch is ahead of 'origin/master' by 1 commit.
+          (use "git push" to publish your local commits)
+    
+    (pull master from remote repository)
+    $ git pull origin master
+        remote: Enumerating objects: 1, done.
+        remote: Counting objects: 100% (1/1), done.
+        remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+        Unpacking objects: 100% (1/1), done.
+        From https://github.com/testgmj/try_to_edit
+         * branch            master     -> FETCH_HEAD
+           1856873..6c8bbac  master     -> origin/master
+        Updating 224fc81..6c8bbac
+        Fast-forward
+         add_num.py | 3 +++
+         readme.md  | 8 ++++----
+         2 files changed, 7 insertions(+), 4 deletions(-)
+         create mode 100644 add_num.py
+
+
+    (delete the branch)
+    $ git branch -d add_num
+        Deleted branch add_num (was 8bf12e0).
+
+    
