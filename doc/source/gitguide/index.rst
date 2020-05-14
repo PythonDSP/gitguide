@@ -1128,7 +1128,7 @@ Working in a team
 *****************
 
 In the previous section, we have seen various git-commands. In this section, we will use these commands to effectively work in a team. 
-We are assuming that, we already have a local copy of existing remote repository with name 'try_to_edit'
+We are assuming that, we already have a local copy of existing remote repository e.g. here the name of repository is 'try_to_edit'
 
 
 Pull the master branch
